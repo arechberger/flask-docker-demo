@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: flask-docker-demo-service
+spec:
+  selector:
+    app: flask-docker-demo
+  ports:
+  - protocol: TCP
+    port: 8000
+  type: LoadBalancer

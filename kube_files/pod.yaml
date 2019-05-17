@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: flask-docker-demo
+  name: flask-docker-demo-small
 spec:
   containers:
-  - name: flask-docker-demo
-    image: arechberger/flask-docker-demo:0.0.1
+  - name: flask-docker-demo-small
+    image: arechberger/flask-docker-demo-small:58315d3
     ports:
     - containerPort: 8000
